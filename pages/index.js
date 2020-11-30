@@ -23,12 +23,13 @@ const Home = () => {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        {auth?.user ? (
+        {auth.user ? (
           <button onClick={() => auth.signOut()}>Sign out</button>
         ) : (
           <button onClick={() => auth.signInWithGithub()}>Sign in</button>
         )}
 
+        <p>{auth?.user?.displayName}</p>
         <p>{auth?.user?.email}</p>
       </main>
 
