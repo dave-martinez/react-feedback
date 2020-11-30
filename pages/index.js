@@ -1,6 +1,6 @@
 import auth from 'firebase/auth';
 import { Heading, Code, Button, Text } from '@chakra-ui/react';
-import { useAuth } from '../lib/auth';
+import { useAuth } from '@/lib/auth';
 
 const Home = () => {
   const auth = useAuth();
