@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { auth } from 'firebase';
+import auth from 'firebase/auth';
 import { useAuth } from '../lib/auth';
 import styles from '../styles/Home.module.css';
 
